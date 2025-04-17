@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme creatore </title>
+
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          margin: 0;
+          min-height: 100vh;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+          align-items: top;
+          margin-bottom: 20px;
+        }
+        button {
+          border: 2px solid black;
+          margin: 5px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        button:hover {
+          background-color: #45a049;
+        }
+        #meme-container {
+          max-width: 400px;
+          max-height: 800px;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+        #image {
+          max-width: 100%;
+          height: auto;
+          max-height: 700px;
+          border-radius: 5px;
+        }
+        #title {
+          font-size: 18px;
+          margin: 10px 0;
+          color: #333;
+        }
+        #error {
+          color: red;
+          display: none;
+          margin: 10px 0;
+        }
+      </style>
+</head>
+
+<header>
+    <button id="btn"> new meme </button>
+</header>
+
+<body>
+<div id="meme-container">
+<h3 id="title"></h3>
+<img id="image" src="" alt="">
+
+</div>
+<script src="Fetch.js"> </script>
+</body>
+</html>
