@@ -8,8 +8,6 @@ btn.addEventListener("click", function(){
         console.error(e);
     });
 });
-
-
 async function fetchAPI(){
     var url = "https://meme-api.com/gimme";
     var requestOption = {
@@ -20,7 +18,6 @@ async function fetchAPI(){
     console.log(data);
     process(data)
 }
-
 
 function process (data){
     tilte.textContent = data.title;
